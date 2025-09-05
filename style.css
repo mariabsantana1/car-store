@@ -13,6 +13,15 @@ body{
     overflow: hidden;
 }
 
+.menu-btn {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
 header {
     position: fixed;
     width: 90vw;
@@ -265,5 +274,87 @@ section {
                 }
             }
         }
+    }
+}
+
+
+
+@media (max-width: 1024px) {
+    header {
+        grid-template-columns: 1fr auto;
+        gap: 40px;
+        width: 95vw;
+    }
+
+    header img {
+        width: 180px;
+    }
+
+    header nav ul {
+        grid-template-columns: repeat(3, auto);
+        gap: 20px;
+    }
+
+    section .list .content h2 {
+        font-size: clamp(3rem, 6vw, 6rem);
+    }
+
+    section .list .content .description {
+        font-size: 14px;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background: rgba(0,0,0,0.9);
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    nav ul.open {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .menu-btn.active {
+        color: #beff1b; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    header img {
+        width: 140px;
+    }
+
+    section .list .item .content h2 {
+        font-size: 2.5rem;
+    }
+
+    section .list .item .content .description {
+        font-size: 12px;
+    }
+
+    .arrows button {
+        width: 40px;
+        height: 40px;
+    }
+
+    .arrows button img {
+        width: 20px;
     }
 }

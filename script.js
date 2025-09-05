@@ -37,3 +37,24 @@ prevButton.onclick = () => {
     setSlider()
     items[active].classList.add('active')
 }
+
+
+
+const header = document.querySelector("header")
+const nav = header.querySelector("nav ul")
+const menuBtn = document.createElement("button")
+menuBtn.classList.add("menu-btn")
+menuBtn.innerHTML = "☰"
+header.insertBefore(menuBtn, nav)
+
+menuBtn.addEventListener("click", () => {
+    nav.classList.toggle("open")
+    menuBtn.classList.toggle("active")
+})
+
+nav.querySelectorAll("li").forEach(li => {
+    li.addEventListener("click", () => {
+        nav.classList.remove("open")
+        menuBtn.classList.remove("active")
+    })
+})
