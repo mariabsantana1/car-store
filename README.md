@@ -12,8 +12,9 @@ Loja online moderna com animações suaves e design responsivo para uma concessi
 <br>
 
 <p align="center">
-    <img alt="projeto DevLinks" src=".github/preview2.png" width="100%">
     <img alt="projeto DevLinks" src=".github/preview1.png" width="100%">
+    <img alt="projeto DevLinks" src=".github/preview2.png" width="100%">
+    <img alt="projeto DevLinks" src=".github/preview3.png" width="100%">
 
 ## 🚀 Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
