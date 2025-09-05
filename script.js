@@ -39,7 +39,6 @@ prevButton.onclick = () => {
 }
 
 
-
 const header = document.querySelector("header")
 const nav = header.querySelector("nav ul")
 const menuBtn = document.createElement("button")
